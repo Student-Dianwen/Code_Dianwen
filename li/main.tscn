@@ -1,0 +1,17 @@
+[gd_scene load_steps=3 format=3 uid="uid://b0ymbpc6o55kt"]
+
+[ext_resource type="PackedScene" uid="uid://b45dmtttxlpbo" path="res://li_fish.tscn" id="3_jkixx"]
+[ext_resource type="PackedScene" uid="uid://frscf0m7qqmj" path="res://box.tscn" id="4_t3627"]
+
+[node name="main" type="Node3D"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -0.0231755, 0)
+
+[node name="box" parent="." instance=ExtResource("4_t3627")]
+transform = Transform3D(1, 0, 0, 0, 0.95305, 0, 0, 0, 0.910572, 7.72672, -24.4473, 0)
+
+[node name="single_fish" parent="." instance=ExtResource("3_jkixx")]
+transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 0, 0, 0)
+
+[node name="Camera3D" type="Camera3D" parent="."]
+transform = Transform3D(0.999848, -0.0174524, -7.5904e-09, 6.83797e-09, -4.31733e-08, 1, -0.0174524, -0.999848, -4.30473e-08, 0, 120, 0)
+fov = 70.4229
